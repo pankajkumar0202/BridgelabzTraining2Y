@@ -1,31 +1,42 @@
-# DSA Practice
+# Recursion and Backtracking Assignment
 
-Just a place where I keep all my DSA practice problems, organized by topic.
+## Introduction
+Recursion is a technique where a function calls itself. Backtracking explores possible solutions and reverses choices when they fail.
 
-## Branches
+## Problem 1: Directory Size
+- **Base Case:** If the item is a file, return its size.
+- **Recursive Case:** Calculate and add the sizes of all child items.
+- **Total Size:** 380 KB
+- **Time Complexity:** O(N), where N is the number of files and directories.
+- **Iterative Approach:** Use a stack or queue.
+- **Cycle Handling:** Maintain a set of visited directory identities to prevent infinite recursion.
 
-- **main** → This page
-- **Arrays**
-- **Searching**
-- **Sorting**
-- **String**
-- **Workshop**
-- **practice-problems**
-- **Recursion**
+**File:** `Problem1_DirectorySize.java`
 
-## How to use
+## Problem 2: Word Search
+Find `DREAM` in a grid using horizontal, vertical, and diagonal movements without reusing cells.
 
-Just switch to the branch of the topic you want to practice and start solving.
+- **Technique:** Recursion and backtracking
+- **Expected Output:** `Word found: true`
+- **Time Complexity:** O(R × C × 8 × 7^(L-1))
+- **Space Complexity:** O(L)
 
-If you want to add a new topic, create a new branch from main.
+**File:** `Problem2_WordSearch.java`
 
-## Suggested order
+## Problem 3: N-Queens
+Place N queens on an N × N chessboard so that no two queens attack each other.
 
-1. Arrays  
-2. Searching  
-3. Sorting  
-4. String  
-5. practice-problems
-6. Recursion 
+- **Technique:** Recursion and backtracking
+- **Optimization:** Track occupied columns and diagonals.
+- **Time Complexity:** O(N × N!) as a conservative bound for the basic implementation.
+- **Board Space:** O(N²)
 
-That’s it. Keep coding :)
+**File:** `Problem3_NQueens.java`
+
+## Conclusion
+This assignment demonstrates recursion, base cases, recursive calls, backtracking, and complexity analysis through three practical problems.
+
+## Author
+**Ishant Pathak**  
+B.Tech CSE — Cloud Computing and DevOps  
+GLA University
